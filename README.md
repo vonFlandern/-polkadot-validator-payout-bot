@@ -27,7 +27,7 @@ Installation
 
 Clone this repository:
 
-git clone https://github.com/YOUR_USERNAME/polkadot-validator-payout-bot.git
+git clone https://github.com/vonFlandern/polkadot-validator-payout-bot.git
 cd polkadot-validator-payout-bot
 
 Install dependencies:
