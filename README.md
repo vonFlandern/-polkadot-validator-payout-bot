@@ -24,7 +24,7 @@ cd polkadot-validator-payout-bot
 
 Install dependencies:
 
-bashnpm install
+npm install
 
 Create your .env file:
 
@@ -74,8 +74,8 @@ sudo -u payoutbot crontab -e
 
 Add a cron entry to run once daily at 3:45 UTC:
 45 3 * * * cd /home/payoutbot/polkadot-validator-payout-bot && /usr/bin/node payout.js >> /home/payoutbot/payout.log 2>&1
-Understanding Era Timing
 
+Understanding Era Timing
 Polkadot eras last approximately 24 hours
 The script checks the last 7 eras to catch any missed payouts
 Rewards can be claimed up to 84 eras after they were earned
