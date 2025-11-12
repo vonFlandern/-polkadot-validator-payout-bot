@@ -39,11 +39,17 @@ cp .env.example .env
 Edit .env with your configuration:
 
 nano .env
+
 Configuration
+
 Edit the .env file with your specific settings:
+
 env# Polkadot Configuration
+
 NOMINATOR_SEED=your_seed_phrase_here
+
 VALIDATOR_ADDRESS=your_validator_address_here
+
 
 # SMTP Configuration for Email Notifications
 SMTP_HOST=smtp.example.com
