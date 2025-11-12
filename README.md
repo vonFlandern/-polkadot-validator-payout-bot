@@ -4,10 +4,15 @@ An automated reward claiming bot for Polkadot validators. This script automatica
 Features
 
 ✅ Automatically claims validator rewards for recent eras
+
 📧 Email notifications for successful/failed claims
+
 ⏱️ Can be run via cron for full automation
+
 🔍 Checks the last 7 eras to catch any missed payouts
+
 🔒 Secure configuration via environment variables
+
 
 Prerequisites
 
