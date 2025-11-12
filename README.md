@@ -1,5 +1,6 @@
 Polkadot Validator Payout Bot
 An automated reward claiming bot for Polkadot validators. This script automatically claims staking rewards from the Polkadot Asset Hub chain after each era and sends email notifications about the claim status.
+
 Features
 
 ✅ Automatically claims validator rewards for recent eras
