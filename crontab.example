@@ -1,0 +1,41 @@
+# Example Crontab Configuration for Polkadot Validator Payout Bot
+# =================================================================
+#
+# To edit your crontab:
+#   crontab -e
+#
+# Or for a specific user (e.g., payoutbot):
+#   sudo -u payoutbot crontab -e
+#
+# Crontab format:
+# ┌───────────── minute (0 - 59)
+# │ ┌───────────── hour (0 - 23)
+# │ │ ┌───────────── day of month (1 - 31)
+# │ │ │ ┌───────────── month (1 - 12)
+# │ │ │ │ ┌───────────── day of week (0 - 6) (Sunday to Saturday)
+# │ │ │ │ │
+# * * * * * command to execute
+
+# IMPORTANT: Update the path to match your installation directory!
+# Replace /home/payoutbot/polkadot-validator-payout-bot with your actual path
+
+# ============================================================
+# Option 1: Run every 24 hours
+# ============================================================
+0 */24 * * * cd /home/payoutbot/polkadot-validator-payout-bot && /usr/bin/node payout.js >> /home/payoutbot/payout.log 2>&1
+
+# ============================================================
+# Option 2: Run once daily at 3:45 AM
+# ============================================================
+# 45 3 * * * cd /home/payoutbot/polkadot-validator-payout-bot && /usr/bin/node payout.js >> /home/payoutbot/payout.log 2>&1
+
+# ============================================================
+# Notes:
+# ============================================================
+# - The script checks the last 7 eras, so running once per day is usually sufficient
+# - Eras last approximately 24 hours on Polkadot
+# - Rewards can be claimed up to 84 eras after being earned
+# - Logs are written to /home/payoutbot/payout.log
+# - Email notifications will be sent for each run
+# - Use 'crontab -l' to list current cron jobs
+# - Use 'crontab -r' to remove all cron jobs (be careful!)
