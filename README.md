@@ -61,12 +61,19 @@ SMTP_TO=notification_recipient@example.com
 Configuration Details
 
 NOMINATOR_SEED: The seed phrase of the account that will pay for transaction fees
+
 VALIDATOR_ADDRESS: The validator address for which to claim rewards
+
 SMTP_HOST: Your email provider's SMTP server
+
 SMTP_PORT: SMTP port (typically 587 for TLS, 465 for SSL)
+
 SMTP_SECURE: Set to "true" for port 465, "false" for port 587
+
 SMTP_USER: Your email address for SMTP authentication
+
 SMTP_PASS: Your SMTP password or app-specific password
+
 SMTP_TO: Email address to receive notifications
 
 Usage
