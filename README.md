@@ -109,7 +109,6 @@ sudo -u payoutbot crontab -e
 
 - Polkadot eras last approximately 24 hours
 - The script checks the last 7 eras to catch any missed payouts
-- Rewards can be claimed up to 84 eras after they were earned
 - Running the bot once per day is usually sufficient
 
 ## Security Best Practices
